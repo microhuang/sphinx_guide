@@ -9,7 +9,7 @@ sphinx应用实践技巧
     无解决办法。
     
 2、phrase_boundary、phrase_boundary_step -- 无法按短语分隔符进行精确匹配。
-    解决方法，将记录拆分为多个独立字段索引。 -- sql_query = select id, substring_index(name,'-',1) as name1, substring_index(substring_index(name,'-',2),'-',-1) as name2 from test;
+    解决方法，将记录拆分为多个独立字段索引。 -- sql_query = select id, substring_index(name,'-',1) as name1, substring_index(substring_index(name,'-',2),'-',-1) as name2 from test;。注意适当控制字段总数。
     
 3、内置评分公式
     SPH_RANK_PROXIMITY_BM25 = sum(lcs*user_weight)*1000+bm25
