@@ -35,4 +35,6 @@ sphinx应用实践技巧
 7、部分搜索
     "word1 word2"/2
     
+8、运行程序实时更新属性，SphinxClient::UpdateAttributes，但不支持程序更新索引实体。
+    
 更多参考http://sphinxsearch.com/docs/current.html
