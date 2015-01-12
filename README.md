@@ -36,5 +36,8 @@ sphinx应用实践技巧
     "word1 word2"/2
     
 8、运行程序实时更新属性，SphinxClient::UpdateAttributes，但不支持程序更新索引实体。
+
+9、多索引合并（主索引+增量索引），确保所有索引源使用同一字符编码（utf8）。
+    避免因字符编码导致数据不能搜索到问题。
     
 更多参考http://sphinxsearch.com/docs/current.html
