@@ -105,6 +105,12 @@ source test
 ```
 ```
 select id,factors() from test where match('@(synonyms) "甲基帕罗西汀"') option ranker=expr('sum(exact_hit)');
+Empty set (0.01 sec)
+
 select id,factors() from test where match('@(name) "甲基帕罗西汀"') option ranker=expr('sum(exact_hit)');
+Empty set (0.01 sec)
+
 select id,factors() from test where match('@(synonyms,name) "甲基帕罗西汀"') option ranker=expr('sum(exact_hit)');
+77777777   exact_hit = 1
+88888888   exact_hit = 1
 ```
