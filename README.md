@@ -40,4 +40,8 @@ sphinx应用实践技巧
 9、多索引合并（主索引+增量索引），确保所有索引源使用同一字符编码（utf8）。
     避免因字符编码导致数据不能搜索到问题。
     
+10、api选择
+    sphinxapi.php不支持factors() -- 乱码？
+    sphinxql支持factors()。
+    
 更多参考http://sphinxsearch.com/docs/current.html
