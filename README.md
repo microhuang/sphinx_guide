@@ -44,4 +44,6 @@ sphinx应用实践技巧
     sphinxapi.php不支持factors() -- 乱码？
     sphinxql支持factors()。
     
+11、sql_field_<type>声明“存储”字段，sql_attr_<type>声明“属性”字段。“存储”字段不能用于filter、“属性”字段不返回值。字符型数据默认为“存储”字段、非字符型数据默认为“属性”字段。
+    
 更多参考http://sphinxsearch.com/docs/current.html
